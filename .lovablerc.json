@@ -1,0 +1,17 @@
+{
+  "projectName": "playstore",
+  "framework": "react",
+  "buildTool": "vite",
+  "packageManager": "bun",
+  "buildCommand": "bun run build",
+  "devCommand": "bun dev",
+  "port": 8080,
+  "github": {
+    "enabled": true,
+    "branch": "main"
+  },
+  "supabase": {
+    "enabled": true,
+    "projectId": "qyxiirqhabfkohryrwkc"
+  }
+}
