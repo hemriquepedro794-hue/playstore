@@ -3,7 +3,7 @@
 # netlify preset in vite.config.ts, producing Netlify Functions + static assets.
 
 [build]
-  command = "npm run build"
+  command = "bun run build"
   publish = "dist"
 
 [build.environment]
@@ -16,3 +16,12 @@
 #   SUPABASE_URL
 #   SUPABASE_PUBLISHABLE_KEY
 #   SUPABASE_SERVICE_ROLE_KEY
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "bun dev"
+  port = 8080
